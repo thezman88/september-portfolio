@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Yankee Guess Game</title>
+  <link rel="stylesheet" href="wordGame.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- title container -->
+  <div class="container-fluid"id="title">
+    <div class="row text-center">
+      <div class="col">
+        <h3 class="display-3"id="title">Guess The Yankee</h3>
+      </div>
+    </div>
+  </div>
+  <!-- game box -->
+  <div class="container-fluid bg-secondary text-white">
+    <div class="row">
+      <div class="col-6">
+        <!-- win section  -->
+        <!-- <h3 class="ml-3">wins</h3> -->
+        <div class="display-4 ml-3 text-" id="wins">
+          0
+        </div>
+        <div class="col">
+          <!-- loss section  -->
+          <!-- <h3 class="m">losses</h3> -->
+          <div class="display-4" id="losses">
+            0
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 text-center">
+        <!-- current word  -->
+        <h3>Current Word</h3>
+        <!-- blanks -->
+        <div class="col  text-center" id="currentWord" style="font-size:2rem;">
+        _ _ _ _
+        </div>
+        <div class="col">
+          <!-- guesses remaining -->
+          <div class="display-4" id="remainingGuesses">
+            9
+          </div>
+        </div>
+        <div class="col">
+          <!-- letters guessed -->
+          <div class=""id="lettersGuessed">
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+<!-- loss images box -->
+<div class="container border p-3">
+  <div class="row text-center">
+    <div class="col-3"style="height:auto;">
+      <div id="homerunImg">
+        <img src="https://image.flaticon.com/icons/svg/2070/2070548.svg" alt="baseball"style="height:100px;width:100px;">
+
+      </div>
+
+    </div>
+    <div class="col-3">
+      <div id="playerImg">
+        <img src="https://image.flaticon.com/icons/svg/2070/2070552.svg" alt="baseball"style="height:100px;width:100px;">
+
+      </div>
+
+    </div>
+    <div class="col-3">
+      <div id="hotDogImg">
+        <img src="https://image.flaticon.com/icons/svg/135/135595.svg" alt="baseball"style="height:100px;width:100px;">
+
+      </div>
+
+    </div>
+    <div class="col-3">
+      <div id="batGloveImg">
+        <img src="https://image.flaticon.com/icons/svg/1949/1949924.svg" alt="baseball"style="height:100px;width:100px;">
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<div class="container border p-3">
+  <div class="row text-center">
+    <div class="col-3">
+      <div id="gloveImg">
+        <img src="https://image.flaticon.com/icons/svg/1645/1645767.svg" alt="baseball"style="height:100px;width:100px;">
+
+      </div>
+
+    </div>
+    <div class="col-3">
+      <div id="stadiumImg">
+        <img src="https://image.flaticon.com/icons/svg/1286/1286243.svg" alt="baseball"style="height:100px;width:100px;">
+
+      </div>
+
+    </div>
+    <div class="col-3">
+      <div id="baseballImg">
+        <img src="https://image.flaticon.com/icons/svg/164/164991.svg" alt="baseball"style="height:100px;width:100px;">
+
+      </div>
+
+    </div>
+    <div class="col-3">
+      <div id="batBallImg">
+        <img src="https://image.flaticon.com/icons/svg/1997/1997203.svg" alt="baseball"style="height:100px;width:100px;">
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col text-center mt-3">
+      <audio id="myAudio">
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="organMusic.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+
+      <button onclick="playAudio()" type="button">Play Audio</button>
+      <button onclick="pauseAudio()" type="button">Pause Audio</button>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <script src="game.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
