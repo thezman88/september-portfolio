@@ -150,7 +150,7 @@ nextQuestion : function(){
       trivia.correct++;
       clearInterval(trivia.timerId);
       resultId = setTimeout(trivia.guessResult, 1000);
-      $('#results').html('<h3>Correct Answer!</h3>');
+      $('#results').html('<h3>Correct!</h3>');
     }
     // else the user picked the wrong option, increment incorrect
   else{
@@ -160,7 +160,7 @@ nextQuestion : function(){
     trivia.incorrect++;
     clearInterval(trivia.timerId);
     resultId = setTimeout(trivia.guessResult, 1000);
-    $('#results').html('<h3>Better luck next time! '+ currentAnswer +'</h3>');
+    $('#results').html('<h3>Wrong! '+ currentAnswer +'</h3>');
   }
 
 },
