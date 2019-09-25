@@ -1,0 +1,21 @@
+body{
+  color:#666;
+  font-family: 'Nunito', sans-serif;
+  background-color: #f2f2f7;
+background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
+}
+
+
+.jumbotron{
+  background-color: #c8dad3;
+  font-family: 'Nunito', sans-serif;
+  color:#000;
+}
+
+.thead{
+  background-color: #347474;
+}
+#add-row{
+  background-color: #93b5b3;
+  color: #f2f6f5;
+}
